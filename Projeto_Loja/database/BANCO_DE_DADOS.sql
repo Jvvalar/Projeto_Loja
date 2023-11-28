@@ -17,15 +17,16 @@ CREATE TABLE `Clientes` (
 
 
 CREATE TABLE `Produtos` (
-  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `ID` bigint(255) NOT NULL AUTO_INCREMENT,
   `valor` float NOT NULL,
-  `ID_categoria` int(11) NOT NULL,
+  `ID_categoria` bigint(255) NOT NULL,
   `descricao` text DEFAULT NULL,
   `produto` varchar(120) NOT NULL,
   PRIMARY KEY (ID),
-  FOREIGN KEY (ID_categoria) references categorias(id)
-
+  FOREIGN KEY (ID_categoria) REFERENCES Categorias(ID) -- Correção na referência da chave estrangeira
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
 
 CREATE TABLE Vendas (
     ID INT PRIMARY KEY AUTO_INCREMENT,

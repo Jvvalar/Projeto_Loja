@@ -23,13 +23,13 @@ table {
     margin-right: 5px;
     padding: 3px 8px;
     border: 1px solid #000;
-    background-color: #4c8baf;
+    background-color: #c0392b;
     color: white;
     border-radius: 3px;
   }
   
   a:hover {
-    background-color: #457ba0;
+    background-color: #c0392b;
   }
 
 

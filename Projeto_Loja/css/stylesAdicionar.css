@@ -1,7 +1,7 @@
 .container {
     width: 300px;
     margin: 20px;
-    float: left; 
+    float: left; /* Move para o canto esquerdo */
     border: 1px solid #ccc;
     padding: 15px;
     border-radius: 5px;
@@ -27,14 +27,14 @@
     width: 100%;
     padding: 8px;
     margin-bottom: 10px;
-    border: 1px solid #4c8baf;
+    border: 1px solid  #c92020;
     border-radius: 3px;
   }
   
 
   input[type="submit"] {
     padding: 8px 15px;
-    background-color: #4c8baf;
+    background-color:  #c92020;
     color: white;
     border: none;
     border-radius: 3px;
@@ -42,6 +42,5 @@
   }
   
   input[type="submit"]:hover {
-    background-color: #4c8baf;
+    background-color:  #c92020;
   }
-

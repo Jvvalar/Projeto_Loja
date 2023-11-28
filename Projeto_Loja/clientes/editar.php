@@ -8,7 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $telefone = $_POST['telefone'];
     $endereco = $_POST['endereco'];
 
-    $sql = "UPDATE clientes SET nome='$nome', email='$email', telefone='$telefone', endereco = '$endereco' WHERE id=$id";
+    $sql = "UPDATE clientes SET nome='$nome', email='$email', telefone='$telefone', endereco='$endereco' WHERE id=$id";
     if ($conexao->query($sql) === TRUE) {
         header("Location: listar.php");
     } else {
@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sql = "SELECT id, nome, email, telefone, endereco FROM clientes WHERE id=$id";
     $result = $conexao->query($sql);
     if ($result->num_rows > 0) {
-        $tafrefa = $result->fetch_assoc();
+        $tarefa = $result->fetch_assoc();
     } else {
         echo "Cliente não encontrado";
         exit;
@@ -29,16 +29,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 $conexao->close();
 ?>
 
-
 <link rel="stylesheet" type="text/css" href="../css/stylesEditar.css">
 <div class="container">
 
     <form method="post" action="editar.php">
         <input type="hidden" name="id" value="<?php echo $tarefa['id']; ?>">
-            Nome: <input name="nome" value="<?php echo $tarefa['nome']; ?>"></input><br>
-            Email: <input name="email" value ="<?php echo $tarefa['email']; ?>"></input><br>
-            Telefone: <input name="telefone" value = "<?php echo $tarefa['telefone']; ?>"></input><br>
-            Endereço: <input name="endereco" value = "<?php echo $tarefa['endereco']; ?>"></input><br>
+        Nome: <input name="nome" value="<?php echo $tarefa['nome']; ?>"><br>
+        Email: <input name="email" value="<?php echo $tarefa['email']; ?>"><br>
+        Telefone: <input name="telefone" value="<?php echo $tarefa['telefone']; ?>"><br>
+        Endereço: <input name="endereco" value="<?php echo $tarefa['endereco']; ?>"><br>
         <input type="submit" value="Salvar">
     </form>
 
