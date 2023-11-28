@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Garante que a tela ocupe pelo menos 100% da altura da janela */
+    font-size: 18px; /* Ajusta o tamanho da fonte padrão */
+}
+
+.container {
+    text-align: center;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    max-width: 600px; /* Limita a largura do contêiner */
+    width: 80%; /* Usa 80% da largura disponível */
+}
+
+header {
+    background-color:  #c92020;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px 15px 0 0;
+    margin-bottom: 30px;
+    font-size: 32px; /* Aumenta o tamanho da fonte do cabeçalho */
+}
+
+h1 {
+    margin: 0;
+    font-size: 36px; /* Aumenta o tamanho do título */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 30px;
+}
+
+li a {
+    display: block;
+    padding: 20px 40px;
+    text-decoration: none;
+    color: #333;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    font-size: 24px; /* Aumenta o tamanho do texto dos links */
+}
+
+li a:hover {
+    background-color: #ddd;
+}
