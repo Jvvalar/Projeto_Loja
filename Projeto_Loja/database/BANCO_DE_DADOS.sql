@@ -23,16 +23,16 @@ CREATE TABLE `Produtos` (
   `descricao` text DEFAULT NULL,
   `produto` varchar(120) NOT NULL,
   PRIMARY KEY (ID),
-  FOREIGN KEY (ID_categoria) REFERENCES Categorias(ID) -- Correção na referência da chave estrangeira
+  FOREIGN KEY (ID_categoria) REFERENCES Categorias(ID) 
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
 
 CREATE TABLE Vendas (
-    ID INT PRIMARY KEY AUTO_INCREMENT,
-    ID_cliente BIGINT,
-    data_hora DATETIME,
-    total DECIMAL(10, 2),
+    'ID' INT PRIMARY KEY AUTO_INCREMENT,
+    'ID_cliente' BIGINT,
+    'data_hora' DATETIME,
+    'total' DECIMAL(10, 2),
     FOREIGN KEY (ID_Cliente) REFERENCES Clientes(ID)
 );
 

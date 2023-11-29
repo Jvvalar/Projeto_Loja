@@ -18,10 +18,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Erro ao atualizar: " . $conexao->error;
     }
 } else {
-    $id = $_GET['id'];
+    $id = $_GET['i  d'];
     $sql = "SELECT p.id, p.produto, p.valor, p.descricao, p.ID_categoria, c.categoria AS nome_categoria 
             FROM produtos AS p 
-            INNER JOIN categorias AS c ON p.ID_categoria = c.ID 
+            INNER JOIN categorias AS c ON p.ID_categoria = c .ID 
             WHERE p.id=$id";
 
     $result = $conexao->query($sql);
@@ -33,7 +33,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit;
     }
 }
-
 
 $sql_categorias = "SELECT ID, categoria FROM categorias";
 $result_categorias = $conexao->query($sql_categorias);
@@ -64,5 +63,8 @@ $conexao->close();
             ?>
         </select><br>
         <input type="submit" value="Salvar">
-    </form>
+    </form><br>
+
+    <a href="listar.php">Voltar</a>
+
 </div>

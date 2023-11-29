@@ -48,3 +48,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
 ?>
+<a href="listar.php">Voltar</a>

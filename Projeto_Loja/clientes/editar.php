@@ -42,3 +42,4 @@ $conexao->close();
     </form>
 
 </div>
+<a href="listar.php">Voltar</a>

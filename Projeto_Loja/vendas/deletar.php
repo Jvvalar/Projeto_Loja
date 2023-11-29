@@ -1,10 +1,10 @@
 <?php
 include '../conexao.php';
 
-if ($_SERVER["REQUEST_METHOD"] == "GET") {
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $id = $_GET['id'];
 
-    $sql = "DELETE FROM clientes WHERE id=$id";
+    $sql = "DELETE FROM categorias WHERE id=$id";
     if ($conexao->query($sql) === TRUE) {
         header("Location: listar.php");
     } else {
@@ -14,5 +14,3 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
 
 $conexao->close();
 ?>
-
-<a href="../index.php">Voltar</a>

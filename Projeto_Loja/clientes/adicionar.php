@@ -37,3 +37,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 $conexao->close();
 
 ?>
+
+<a href="listar.php">Voltar</a>

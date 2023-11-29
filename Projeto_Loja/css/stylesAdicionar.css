@@ -1,7 +1,7 @@
 .container {
     width: 300px;
     margin: 20px;
-    float: left; /* Move para o canto esquerdo */
+    float: left; 
     border: 1px solid #ccc;
     padding: 15px;
     border-radius: 5px;
