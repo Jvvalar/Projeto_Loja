@@ -27,7 +27,7 @@
     width: 100%;
     padding: 8px;
     margin-bottom: 10px;
-    border: 1px solid  #c92020;
+    border: 1px solid  #000000;
     border-radius: 3px;
   }
   
@@ -42,5 +42,16 @@
   }
   
   input[type="submit"]:hover {
-    background-color:  #c92020;
+    background-color:  #0e0a0a;
   }
+
+  a{
+    padding: 8px 15px;
+    background-color:  #c92020;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  

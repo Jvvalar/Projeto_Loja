@@ -36,6 +36,5 @@ $conexao->close();
     Descricao: <input name="descricao" value ="<?php echo $tarefa['descricao']; ?>"></input><br>
 
     <input type="submit" value="Salvar">
+    <a href="listar.php">Voltar</a>
 </form>
-
-<a href="listar.php">Voltar</a>

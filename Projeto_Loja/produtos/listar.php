@@ -39,7 +39,7 @@ $result = $conexao->query($sql);
                 echo "<td>" . $row["produto"] . "</td>";
                 echo "<td>" . $row["valor"] . "</td>";
                 echo "<td>" . $row["descricao"] . "</td>";
-                echo "<td>" . $row["nome_categoria"] . "</td>"; // Exibindo o nome da categoria
+                echo "<td>" . $row["nome_categoria"] . "</td>";
                 echo "<td>
                 <a href='editar.php?id=" . $row["id"] . "'>Editar</a> | 
                 <a href='deletar.php?id=" . $row["id"] . "'>Deletar</a></td>";
@@ -51,8 +51,8 @@ $result = $conexao->query($sql);
         ?>
     </tbody>
 </table><br><br>
-
 <a href="../index.php">Voltar</a>
+
 
 <?php
 $conexao->close();

@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Erro ao atualizar: " . $conexao->error;
     }
 } else {
-    $id = $_GET['i  d'];
+    $id = $_GET['id'];
     $sql = "SELECT p.id, p.produto, p.valor, p.descricao, p.ID_categoria, c.categoria AS nome_categoria 
             FROM produtos AS p 
             INNER JOIN categorias AS c ON p.ID_categoria = c .ID 
@@ -41,6 +41,7 @@ $conexao->close();
 ?>
 
 <link rel="stylesheet" type="text/css" href="../css/stylesEditar.css">
+
 <div class="container">
     <form method="post" action="editar.php">
         <input type="hidden" name="id" value="<?php echo $produto['id']; ?>">
@@ -63,8 +64,9 @@ $conexao->close();
             ?>
         </select><br>
         <input type="submit" value="Salvar">
+        <a href="listar.php">Voltar</a>
     </form><br>
 
-    <a href="listar.php">Voltar</a>
+
 
 </div>

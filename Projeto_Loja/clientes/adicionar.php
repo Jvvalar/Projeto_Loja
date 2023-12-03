@@ -8,6 +8,7 @@
         Telefone: <input type="text" name="telefone"><br>
         Endereço: <input type="text" name="endereco"><br>
         <input type="submit" value="Adicionar">
+        <a href="listar.php">Voltar</a>
 
     </form>
 </div>
@@ -38,4 +39,3 @@ $conexao->close();
 
 ?>
 
-<a href="listar.php">Voltar</a>

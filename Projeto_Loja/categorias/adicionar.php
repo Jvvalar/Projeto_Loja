@@ -1,13 +1,14 @@
 <link rel="stylesheet" type="text/css" href="../css/stylesAdicionar.css">
 
 <div class="container">
+
     <form method="post" action="adicionar.php">
         Categoria: <input type="text" name="categoria"><br>
         Descrição: <input type="text" name="descricao"><br>
         <input type="submit" value="Adicionar">
+        <a href="listar.php">Voltar</a>
     </form>
 
-    <a href="listar.php">Voltar</a>
 </div>
 
 

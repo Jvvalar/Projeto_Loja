@@ -39,7 +39,7 @@ $conexao->close();
         Telefone: <input name="telefone" value="<?php echo $tarefa['telefone']; ?>"><br>
         Endereço: <input name="endereco" value="<?php echo $tarefa['endereco']; ?>"><br>
         <input type="submit" value="Salvar">
+        <a href="listar.php">Voltar</a>
     </form>
 
 </div>
-<a href="listar.php">Voltar</a>
